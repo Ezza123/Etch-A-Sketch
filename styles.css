@@ -1,0 +1,46 @@
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.board{
+  display: flex; 
+  flex-wrap:wrap;
+  width: 592px;
+  height: 592px;
+  border:solid; 
+  border-color: black;
+  padding: 0px;
+  margin: 0px;
+ 
+}
+
+
+
+.board_piece{ 
+  display: flex;
+  height: 35px;
+  width: 35px;
+  border: 1px solid;
+  padding: 0px;
+  border-color: black;
+  margin: 0px;
+  
+}
+
+.black_piece{
+  display: flex;
+  height: 35px;
+  width: 35px;
+  border: 1px solid;
+  padding: 0px;
+  border-color: black;
+  background-color: black;
+  margin: 0px;
+}
+
+
+

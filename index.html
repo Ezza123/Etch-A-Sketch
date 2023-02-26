@@ -13,21 +13,38 @@
 
 <body>
   <h1> Board Scale </h1>
-  
-  <div class="size container">
-    <div class="sizeDisplay"></div>
-    <input name="gridSize" onkeypress=""/>
+
+  <div class="sizeDisplay"></div>
+
+  <div class="input container">
+    <input type="number" id="grid_size"/>
+    <button onclick="PlayerInput(Player_input)">Submit</button>
   </div>
 
   <div class="buttons"> 
-
-    <button id="scale.16"> 16 x 16</button>
+    
     <button id="erase"> Erase</button>
+    <button id="sketch"> Sketch</button>
     <button id="refresh">Refresh </button>
 
   </div>
 
-  <div class="board"></div> 
+  <div class = board_container>
+    <div class ="color_pallet">
+      <ol>  
+        <ls><div class = "color" id="red" data-color = 'red' ></div></ls>
+        <ls><div class = "color" id="blue" data-color = "blue" ></div></ls>
+        <ls><div class = "color" id="green" data-color = "green" ></div></ls>
+        <ls><div class = "color" id="yellow" data-color = "yellow" ></div></ls>
+        <ls><div class = "yellow" id="orange" data-color ="orange" ></div></ls>
+        <ls><div class = "color" id="purple" data-color = "purple" ></div></ls>
+        <ls><div class = "color" id="brown" data-color = "brown"></div></ls>
+        <ls><div class = "color" id="black" data-color = 'red' ></div></ls> 
+      </ol>     
+    </div>
+
+    <div class="board"></div> 
+  </div>
   
  
 

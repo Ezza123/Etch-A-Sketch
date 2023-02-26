@@ -1,4 +1,9 @@
 body{
+  background-color: rgb(171, 171, 177);
+}
+
+
+body{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,41 +11,89 @@ body{
 }
 
 
-.board{
+.board{  
   display: flex; 
-  flex-wrap:wrap;
-  width: 592px;
-  height: 592px;
-  border:solid; 
-  border-color: black;
+  flex-direction: row;
+  width: 700px;
+  height: 700px;
+  border: 1px solid black;
   padding: 0px;
-  margin: 0px;
- 
+  margin: 0px; 
 }
 
 
 
-.board_piece{ 
-  display: flex;
-  height: 35px;
-  width: 35px;
-  border: 1px solid;
-  padding: 0px;
-  border-color: black;
-  margin: 0px;
+.board_piece_1
+.board_piece_2{ 
   
-}
-
-.black_piece{
   display: flex;
-  height: 35px;
-  width: 35px;
-  border: 1px solid;
+  flex: 1; 
+  
+  border: 0px;
   padding: 0px;
-  border-color: black;
-  background-color: black;
   margin: 0px;
+
+}
+.board_piece_2{
+  border-top: 1px solid black;
+  background-color: white;
+}
+
+.board_piece_1{ 
+  background-color: white;
 }
 
 
 
+
+
+
+.column_1
+.column_2 {
+  display:flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+}
+
+.column_1{
+  flex: 1;  
+  border: 0px;
+}
+
+.column_2{
+  flex: 1;
+  border-left: 1px solid black;
+}
+
+
+.board_container{
+  display:flex; 
+  justify-content: row;
+    
+}
+
+.color_pallet {
+display:flex; 
+flex-direction: column;
+margin-right: 15px;
+
+}
+
+
+.color {
+width: 30px;
+height: 30px;
+border: 1px solid black;
+margin: 8px;
+}
+
+
+#red{background-color: red;}
+#blue{background-color: blue;}
+#green{background-color: green}
+#yellow{background-color: yellow;}
+#orange{background-color: orange}
+#purple{background-color: purple;}
+#brown{background-color: brown;}
+#black {background-color: black;}
